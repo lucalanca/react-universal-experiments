@@ -18,7 +18,8 @@ const transformMyApiErrors = error => ({
 
 export default class LoginForm extends Component {
   static propTypes = {
-    onLoginSuccess: PropTypes.func.isRequired
+    onLoginSuccess: PropTypes.func.isRequired,
+    onLoginError: PropTypes.func.isRequred
   };
 
   onSubmit = (values, { setSubmitting, setErrors }) =>
@@ -39,6 +40,7 @@ export default class LoginForm extends Component {
       .catch(error => {
         setSubmitting(false);
         setErrors(transformMyApiErrors(error));
+        this.props.onLoginError();
       });
 
   render() {
