@@ -1,0 +1,22 @@
+{
+  "name": "react-universal-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucalanca/react-universal-experiments.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucalanca/react-universal-experiments/issues"
+  },
+  "homepage": "https://github.com/lucalanca/react-universal-experiments#readme",
+  "devDependencies": {
+    "lerna": "^2.9.0"
+  }
+}
